@@ -1,0 +1,5 @@
+# www.robotstxt.org/
+# https://support.google.com/webmasters/answer/156449?hl=es
+
+User-agent: *
+Disallow: /

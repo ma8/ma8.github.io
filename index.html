@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" ng-app="miguelApp"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<!- lang="en" ng-app="myApp"-->
+<html class="no-js" lang="en" ng-app="ma1"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8"/>
+
+	<!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Miguel Ángel</title>
+	<!--
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/app.css">
+	-->
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- Included CSS Files -->
+	<link href='http://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Noto+Sans:400,700|Wendy+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/ma8.css">
+	<script src="https://login.persona.org/include.js"></script>
+</head>
+<body>
+
+	<header>
+	<a data-magellan-destination='article1'></a>
+		<div id=logo>
+			<img src="images/ma.png">
+			<h1 class="nom">Miguel Ángel</h1>
+			<p class="subtitol">Digital creation </p>
+		</div>	
+		<!--
+		<div id="login">
+			<a id="signin" class="persona-button dark" href="#"><span>Sign in</span></a>
+			<a id="logout" class="persona-button dark" href="#"><span>Log out</span></a>
+		</div>
+		-->	
+			
+	
+			
+			<nav id="menu-principal"role="navigation">
+				 <ul  data-magellan-expedition>
+					<li  data-magellan-arrival='article2'><a href="#novetas">Inici</a></li>
+					<li  data-magellan-arrival='article3'><a href="#metode">Mètode</a></li>
+					<li  data-magellan-arrival='article4'><a href="#blog">Blog</a></li>
+					<li  data-magellan-arrival='article5'><a href="#quisoc">Qui Sóc</a></li>
+					<!--<li  data-magellan-arrival='article6'><a href="#contacta">Contacta</a></li>-->
+				 </ul> 
+			</nav>
+		<!--	
+			<nav id="menu-vertical"role="navigation">	 
+				<ul  data-magellan-expedition>
+					<li class="active" data-magellan-arrival='article1'><a href="#inici">1</a></li>
+					<li  data-magellan-arrival='article2'><a href="#portafoli">2</a></li>
+					<li  data-magellan-arrival='article3'><a href="#metode">3</a></li>
+					<li  data-magellan-arrival='article4'><a href="#blog">4</a></li>
+					<li  data-magellan-arrival='article5'><a href="#quisoc">5</a></li>
+					<li  data-magellan-arrival='article6'><a href="#contacta">6</a></li>
+				 </ul>
+			  </nav>
+		 -->
+	</header>
+	
+	<article id="intro">
+		<h2 class="line3"><span>Hola,my name is Miguel Ángel Ramos {{2+1}}</span></h2>
+		<h1 class="line2">Freelance Web Designer</h1>
+		<!--<h3> Actualment m'interessa...</h3>-->
+		<div ng-controller="Control2">
+			<span class="" ng-repeat="skill in skills"> {{skill.name}} </span>
+		<div>
+	</article>
+
+	
+	<div class="row" ng-view></div>
+<!--
+		<article data-magellan-destination='article2' id="portafoli">
+			<header >
+				<h2>El portafoli.</h2>
+			</header>
+			<div class= "content" id="slide-portafoli">
+				<div>
+					<h3>Biblioteca - Catàleg de publicacions</h3>
+					<img src="images/propostes/proposta-cataleg.png"  alt="proposta cataleg de publicacions"/>
+				</div>
+				<div>
+					<h3>;)</h3>
+					<img src="images/t1.png" alt="proposta noticies"/>
+				</div>
+				<div>
+					<h3>The clash</h3>
+					<img src="images/t3.png"  alt="proposta entrada de blog"/>
+				</div>
+			</div>
+			<footer>
+				<img src="images/link.png" alt="" />
+				<h6>→ Links inspiration </h6>
+				<ul class="links-inspire">
+					<li><a href="http://www.awwwards.com/">Awwwards</a></li>
+					<li><a href="http://www.siteinspire.com/">Site Inspire</a></li>
+					<li><a href="http://www.cssdesignawards.com/">Css Design Awwwards</a></li>
+					<li><a href="http://www.cssawards.net/">Css Awwwards</a></li>
+					<li><a href="http://www.csswinner.com/">Css Winner</a></li>
+				</ul>
+			</footer>
+		</article>
+	-->	
+		<article  data-magellan-destination='article3' id="metode">
+			<header>
+				<h1 class="line1">MÈTODE</h1>
+				<p class="line4">CREAR I DESENVOLUPAR</p>
+			</header>
+			<div class="contingut">
+					<ul  class="accordion l1">
+						<li id="fase1">
+							<div><h2>Idea i estratègia</h2></div>
+							<div class="content">
+								<p>L'abast i objectius.</p>
+								<p>Requisits tecnològics.</p>
+								<p>Requisits funcionals. </p>
+								<p>Equip humà</p>
+							</div>
+						</li>
+						<li id="fase2"> 
+							<div><h2>UX i AI</h2></div>
+							<div class="content">
+								<p>Recollida de requisits.</p>
+								<p>Card sorting.</p>
+								<p>Experiència d'usuari.</p>
+								<p>Arquitectura de la informació.</p>
+								<p>Interacció i navegabilitat.</p>
+								<p>Usabilitat i accessibilitat</p>
+								<p>Proves d'usuaris.</p>
+								<p>Reunions d'enfoc.</p>
+							</div>
+						</li>
+						<li id="fase3">
+							<div class="title"><h3>Disseny</h3></div>
+							<div class="content">
+								<p>Creativitat.</p>
+								<p>Recursos gràfics.</p>
+								<p>Arxius PSD.</p>
+							</div>
+						</li>
+						<li id="fase4">
+							<div class="title"><h3>Implementació</h3></div>
+							<div class="content">
+								<p>Materialitzar les funcionalitats.</p>
+								<p>Templates amb html semàntic</p>
+								<p>Maquetació Sass/Less del disseny.</p>
+								<p>Rendiment i optimització</p>
+								<p>SEO - SEM</p>
+							</div>
+						</li>
+					</ul>
+			</div>
+			<footer>
+				<h3>→ Paraules clau:</h3>
+				<ul class="l1">
+					<li>Card sorting</li>
+					<li>Puzzle</li>
+					<li>Arquitectura de la informació</li>
+					<li>Interacció</li>
+					<li>Centrats en l'usuari</li>
+				</ul>
+			</footer>
+		</article>
+		
+		<article  data-magellan-destination='article4' id="blog">
+			<header>
+				<h1 class="line1">BLOG </h1>
+				<p class="line4"> Articles i notícies</p>
+				<h2 class="line2">Responsive Design Sass & media queries</h2>
+				<h3 class="mes-i-dia"><span>06/02/2013</span></h3>
+			</header>
+			<div class="contingut">
+			<p>
+			Cookie cake candy canes jujubes sweet roll danish sesame snaps marshmallow jelly. Jelly donut ice cream powder chupa chups wypas cookie toffee topping. Dragée cheesecake jelly-o jelly-o. Danish brownie candy canes marshmallow. Caramels cheesecake cake. Chocolate gummies bonbon caramels ice cream tart. Faworki apple pie icing. Liquorice cupcake jelly beans biscuit lollipop tart. Marzipan halvah powder. Wafer jelly halvah candy lollipop biscuit. Muffin gummi bears cookie dessert toffee brownie faworki wafer jelly-o. Icing chocolate bar soufflé liquorice soufflé chocolate cake. Faworki sweet chocolate bear claw croissant candy canes marzipan dragée.
+			</p>
+			<p>
+Cheesecake danish ice cream. Lemon drops dessert lemon drops cheesecake brownie caramels bonbon cheesecake danish. Lollipop gummi bears sugar plum cotton candy wafer jelly marzipan. Tootsie roll pie candy canes toffee sweet roll faworki pudding. Gingerbread dragée powder jelly muffin tiramisu marshmallow. Fruitcake lemon drops pie lemon drops gummies. Macaroon candy canes donut wypas marzipan icing sesame snaps soufflé cotton candy. Gingerbread tootsie roll biscuit tart pudding caramels applicake croissant danish. Cookie bear claw pudding jelly-o. Bear claw sweet gingerbread powder pudding. Marshmallow croissant powder. Chocolate gummi bears cheesecake jelly gummies candy canes biscuit. Cheesecake liquorice cotton candy dragée gummi bears cotton candy.
+			</p>
+			<p>
+Faworki jelly beans marshmallow macaroon croissant apple pie apple pie biscuit oat cake. Cotton candy chocolate bar sugar plum topping chupa chups. Chupa chups chocolate cake gingerbread dragée macaroon lollipop biscuit carrot cake. Tart carrot cake cheesecake. Apple pie tart jelly beans sesame snaps bear claw liquorice. Donut wypas chocolate cake ice cream tootsie roll. Dessert apple pie gummi bears cake powder liquorice chupa chups icing cookie. Marzipan topping muffin sweet topping fruitcake carrot cake. Sweet roll topping croissant gingerbread macaroon jujubes chocolate cake pudding. Bonbon fruitcake applicake wypas. Sweet tiramisu oat cake soufflé. Cookie liquorice jujubes apple pie marshmallow tootsie roll soufflé caramels. Cheesecake jelly beans pie carrot cake cake candy wypas. Fruitcake pudding jelly-o.
+			</p>
+			<p>
+Sugar plum pie gummies gingerbread sweet. Cotton candy cotton candy brownie. Biscuit sweet powder gingerbread pie. Tiramisu pie chocolate bar tootsie roll cupcake caramels applicake. Sweet roll ice cream pudding jujubes dragée. Brownie gummies gummies biscuit muffin carrot cake tart gummies. Chocolate oat cake powder danish cookie caramels faworki croissant. Croissant chocolate bar marshmallow tart candy powder muffin powder. Toffee gummies donut. Jelly applicake carrot cake jujubes cupcake cookie apple pie chocolate cake. Candy canes faworki halvah. Gingerbread dessert cookie sugar plum jelly-o.
+			</p>
+			<p>
+Wafer gummi bears candy cake ice cream pie marzipan. Powder halvah jelly-o brownie gingerbread. Sweet roll brownie ice cream chocolate bar sweet. Applicake oat cake bonbon chocolate. Tiramisu gingerbread danish lollipop muffin dragée sesame snaps. Topping liquorice oat cake chupa chups chocolate bar. Wafer donut gummi bears sugar plum dragée lemon drops. Icing marshmallow applicake. Jelly tootsie roll pudding macaroon donut marzipan tiramisu. Cotton candy brownie topping pie sweet soufflé danish sugar plum bonbon. Macaroon jelly beans dessert bonbon wafer carrot cake sweet roll. Chocolate cake dessert tart jelly beans jelly beans tootsie roll marshmallow lemon drops. Wafer cake pastry donut lollipop.
+			</p>
+			</div>
+			<footer>
+				<ul class="relacionats l1">
+					<li><h3>→ Documents relacionats:</h3></li>
+					<li><a href="">hdjsadfbhjdsafbhd</a></li>
+					<li><a href="">hdjsadfbhjdsafbhd</a></li>
+				</ul>
+			</footer>
+		</article>
+		
+		<article  data-magellan-destination='article5' id="quisoc">
+			<header>
+				<h1 class="line1">Qui sóc</h1>
+				<p class="line4">Curriculum vitae</p>
+				<h2 class="line3">Miguel Ángel Ramos, De Reus · Tarragona · hola@miguelangelramos.com · (+34)688 800 305 </h2>
+			</header>
+		
+			
+		<div class="contingut">
+				<span class="triangle"></span>
+			<div class="q1">	
+				<h2>Objectiu</h2>
+				<ul class="l1">	
+					<span class="triangle1"></span>
+					<li>
+						<h3>Desenvolupador front-end</h3>
+						<p>Cotton candy brownie topping pie sweet soufflé danish sugar plum bonbon.
+						 Macaroon jelly beans dessert bonbon wafer carrot cake sweet roll. 
+						 Chocolate cake dessert tart jelly beans jelly beans tootsie roll marshmallow
+						  lemon drops. Wafer cake pastry donut lollipop.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="q2">
+				<h2>Experiència</h2>
+				<ul class="l1">	
+					<span class="triangle1"></span>
+					<li>
+						<h3>Programador php/mysql.</h3>
+						<p>Cotton candy brownie topping pie sweet soufflé danish sugar plum bonbon.
+						 Macaroon jelly beans dessert bonbon wafer carrot cake sweet roll. 
+						 Chocolate cake dessert tart jelly beans jelly beans tootsie roll marshmallow
+						  lemon drops. Wafer cake pastry donut lollipop.</p>
+					</li>
+					<li>
+						<h3>Tècnic de suport i atènció a l'usuari.</h3>
+						<p>Cotton candy brownie topping pie sweet soufflé danish sugar plum bonbon.
+						 Macaroon jelly beans dessert bonbon wafer carrot cake sweet roll. 
+						 Chocolate cake dessert tart jelly beans jelly beans tootsie roll marshmallow
+						  lemon drops. Wafer cake pastry donut lollipop.</p>
+					</li>
+					<li >
+						<h3>Programador asp.net.</h3>
+						<p>Cotton candy brownie topping pie sweet soufflé danish sugar plum bonbon.
+						 Macaroon jelly beans dessert bonbon wafer carrot cake sweet roll. 
+						 Chocolate cake dessert tart jelly beans jelly beans tootsie roll marshmallow
+						  lemon drops. Wafer cake pastry donut lollipop.</p>
+
+					</li>
+					
+					<li>
+						<h3>Desenvolupador Drupal.</h3>
+						<p>Cotton candy brownie topping pie sweet soufflé danish sugar plum bonbon.
+						 Macaroon jelly beans dessert bonbon wafer carrot cake sweet roll. 
+						 Chocolate cake dessert tart jelly beans jelly beans tootsie roll marshmallow
+						  lemon drops. Wafer cake pastry donut lollipop.</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="q3">
+				<h2>Habil·litats professionals</h2>	
+				<ul class="l1">
+					<span class="triangle2"></span>
+							<li> → 
+								<span>Css3</span>
+								<div class="nice secondary progress "><span class="meter nou"></span></div>
+							</li>
+							<li> → 
+								<span>Responsive Design</span>
+								<div class="nice secondary progress "><span class="meter nou"></span></div>
+							</li>
+							<li> → 
+								<span>Jquery</span>
+								<div class="nice secondary progress"><span class="meter set"></span></div>
+							</li>
+							<li> → 
+								<span>Git</span>
+								<div class="nice secondary progress"><span class="meter nou"></span></div>
+							</li>
+							<li> → 
+								<span>Html5</span>
+								<div class="nice secondary progress"><span class="meter nou"></span></div>
+							</li>
+							<li> → 
+								<span>Asp Net</span>
+								<div class="nice secondary progress"><span class="meter vuit"></span></div>
+							</li>
+							<li> → 
+								<span>Simfony php</span>
+								<div class="nice secondary progress"><span class="meter cinc"></span></div>
+							</li>
+							<li> → 
+								<span>J2EE</span>
+								<div class="nice secondary progress"><span class="meter vuit"></span></div>
+							</li>
+							<li> → 
+								<span>Git</span>
+								<div class="nice secondary progress"><span class="meter nou"></span></div>
+							</li>
+							<li> → 
+								<span>SEO</span>
+								<div class="nice secondary progress "><span class="meter cinc"></span></div>
+							</li>
+						</ul>
+			
+			
+			<h2>Llengües</h2>
+			<ul class="l1">
+				<span class="triangle2"></span>
+							<li> → 
+								<span>Francès</span>
+								<div class="nice secondary progress"><span class="meter cinc"></span></div>
+							</li>
+							<li> → 
+								<span>Anglès </span>
+								<div class="nice secondary progress"><span class="meter cinc"></span></div>
+							</li>
+							<li> → 
+								<span>Portuguès</span>
+								<div class="nice secondary progress"><span class="meter cinc"></span></div>
+							</li>
+						</ul>
+			</div>
+			<div class="q4">		
+				<h2 class="">Interessos</h2>
+				<ul class="l1">
+					<span class="triangle1"></span>
+							<li> → 
+								<span>Photoshop</span>
+								<div class="nice secondary progress "><span class="meter sis"></span></div>
+							</li>
+							<li> → 
+								<span>Mockups</span>
+								<div class="nice secondary progress"><span class="meter nou"></span></div>
+							</li>
+							<li> → 
+								<span>Comunity Manager</span>
+								<div class="nice secondary progress"><span class="meter nou"></span></div>
+							</li>
+							<li> → 
+								<span>Eclipse</span>
+								<div class="nice secondary progress"><span class="meter set"></span></div>
+							</li>
+							<li> → 
+								<span>Aptana Studio</span>
+								<div class="nice secondary progress"><span class="meter set"></span></div>
+							</li>
+							<li> → 
+								<span>Coda</span>
+								<div class="nice secondary progress"><span class="meter set"></span></div>
+							</li>
+				</ul>
+				</div>
+			</div>
+			<footer>
+				
+				<ul class=" relacionats l1">
+					<li><h3> → Enllaços relacionats:</h3></li>
+					<li><a href="http://git.miguelangelramos.com">Bitbucket</a></li>
+					<li><a href="https://github.com/ma8">Github</a></li>
+					<li><a href="http://codepen.io/ma8">Codepen</a></li>
+					<li><a href="http://jsfiddle.net/miguelangel8">JsFiddle</a></li>
+					<li><a href="http://linkedin.com">Linkedin</a></li>
+				</ul>
+			</footer>
+		</article>
+	<a data-magellan-destination='article6'></a>
+	
+	
+	<footer id="contacta">
+		 <h1 class="line1">Contacta <span> Come and say hello!</span></h1>
+		 <h1 class="line2">hola@miguelangelramos.com · (+34) 688 800 305</h1>
+		 <p class="">Necessites un cop de mà?
+			 Envia els detalls del seu projecte #Estemencontacte</p>
+		 <!--<div id="btn-contacta"> {···} </div> 
+		 <div class="content-contacta">
+		 	<p>hola contacta</p>
+		 </div>
+		 -->
+		 
+		  <div  id="formulari1" ng-controller="Controller">
+				<form novalidate class="css-form">
+				<fieldset id="step1">
+					<ul class="l1">
+						<li><label>El teu nom</label><input type="text" ng-model="user.name" required /><br/></li>
+						<li><label>El teu e-mail</label> <input type="email" ng-model="user.email" required /><br/></li>
+						<li><label>Phone</label><input type="text" ng-model="user.phone"/><br/></li>
+						<li class="last">
+							<label>Posa't en contacte amb mi per correu</label>
+							<input type="radio" ng-model="user.contacta" value="peremail" />
+							<label>Posa't en contacte amb mi per telèfon</label>
+							<input type="radio" ng-model="user.contacta" value="perphone" /><br/>	
+						</li>
+						</ul>
+					
+						
+				</fieldset>	
+				<fieldset id="step2">
+					<h2>Brief i descripció</h2><p> Descriu quin es el teu objectiu,on vols arribar i les teves necessitats.</p>
+				<label></label><textarea type="tex" ng-model="user.brief"></textarea><br/>
+				</fieldset>
+				
+				<fieldset id="step3">
+					<h2>Termini de temps</h2><p> Descriu quin es el teu objectiu,on vols arribar i les teves necessitats.</p>
+					<label>-----</label>
+				</fieldset>
+			
+				<fieldset id="step4">
+					<h2> Què vols gastar?</h2><p> Descriu quin es el teu objectiu,on vols arribar i les teves necessitats.</p>
+					<label>-----</label>
+				</fieldset>
+				<button ng-click="reset()">Reset</button>
+				<button ng-click="update(user)">Enviar</button>
+				</form>
+		</div>
+		 
+		 
+		 
+		 <!-- SnapWidget -->
+	   <ul id="ig"></ul>
+	   <!--<ul id="pocket"><h6></h6></ul>
+	   <ul id="twitter"><h6></h6></ul>-->
+	   
+		<figure id="branding">
+				<!-- <img src="images/logo.png" alt=""/> -->
+				<h4 class="nom">Miguel Ángel</h4>
+				<p class="subtitol">Digital Creation</p>
+				<p class="copy" ng-controller="Fecha">© Miguel Ángel Digital Creation, {{v | date:'dd-MM-yyyy HH:mm:ss'}}</p>
+		</figure>
+		<ul id="socialinks">
+			<li><a href="#"><img src="images/twitter.png" alt="twitter"/></a></li>
+			<li><a href="#"><img src="images/linkedin.png" alt="linkedin"/></a></li>
+			<li><a href="#"><img src="images/netbives.png" alt="netbives"/></a></li>
+			<li><a href="#"><img src="images/skype.png" alt="skype"/></a></li>
+			<li><a href="#"><img src="images/square.png" alt="instagram"/></a></li>
+		</ul>
+		
+	</footer>
+	
+	<!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="http://code.angularjs.org/angular-1.0.0rc8.min.js"></script>
+<script src="http://code.angularjs.org/angular-resource-1.0.0rc8.min.js"></script>
+
+  <script src="js/script.js"></script>
+  
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+   <script src="js/models/mongolab.js"></script>
+
+
+</body>
+</html>
+
