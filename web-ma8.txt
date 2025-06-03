@@ -1,0 +1,8 @@
+#ma8 WEB
+#https://github.com/ma8/ma8.github.io.git
+
+- master: Branca de producció => git merge release
+- release: Branca de preproduccio o llançament
+- develop: Branca de desenvolupament actiu.
+- hotfix: Branques per corregir errors 
+
