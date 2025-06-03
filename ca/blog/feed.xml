@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Blog MOT</title>
+    <link>https://www.appmot.cat/blog/</link>
+    <description>Últimes novetats de l'app MOT</description>
+    <language>ca</language>
+    
+      <item>
+        <title>Primera entrada</title>
+        <link>https://www.appmot.cat/ca/blog/article-001/</link>
+        <pubDate>Mon, 26 May 2025 24:00:00 GMT</pubDate>
+        <description>En aquesta pàgina ... ... ... ... ... ...</description>
+        <guid>https://www.appmot.cat/ca/blog/article-001/</guid>
+      </item>
+    
+      <item>
+        <title>Article 2!</title>
+        <link>https://www.appmot.cat/ca/blog/article-002/</link>
+        <pubDate>Mon, 26 May 2025 24:00:00 GMT</pubDate>
+        <description>En aquesta pàgina ... ... ... ... ... ...</description>
+        <guid>https://www.appmot.cat/ca/blog/article-002/</guid>
+      </item>
+    
+      <item>
+        <title>Primera entrada</title>
+        <link>https://www.appmot.cat/en/blog/article-001/</link>
+        <pubDate>Mon, 26 May 2025 24:00:00 GMT</pubDate>
+        <description>En aquesta pàgina ... ... ... ... ... ...</description>
+        <guid>https://www.appmot.cat/en/blog/article-001/</guid>
+      </item>
+    
+      <item>
+        <title>article2</title>
+        <link>https://www.appmot.cat/en/blog/article-002/</link>
+        <pubDate>Mon, 26 May 2025 24:00:00 GMT</pubDate>
+        <description>En aquesta pàgina ... ... ... ... ... ...</description>
+        <guid>https://www.appmot.cat/en/blog/article-002/</guid>
+      </item>
+    
+      <item>
+        <title>Primera entrada</title>
+        <link>https://www.appmot.cat/es/blog/article-001/</link>
+        <pubDate>Mon, 26 May 2025 24:00:00 GMT</pubDate>
+        <description>En aquesta pàgina ... ... ... ... ... ...</description>
+        <guid>https://www.appmot.cat/es/blog/article-001/</guid>
+      </item>
+    
+      <item>
+        <title>article 2</title>
+        <link>https://www.appmot.cat/es/blog/article-002/</link>
+        <pubDate>Mon, 26 May 2025 24:00:00 GMT</pubDate>
+        <description>En aquesta pàgina ... ... ... ... ... ...</description>
+        <guid>https://www.appmot.cat/es/blog/article-002/</guid>
+      </item>
+    
+  </channel>
+</rss>

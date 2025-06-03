@@ -1,0 +1,10 @@
+# security.txt - Informació de seguretat del lloc web
+
+Contact: mailto:sistemes@dipta.cat
+Encryption: 
+Acknowledgments: https://www.base.cat
+Policy: https://www.appmot.cat/ca/politica-privacitat
+Hiring: https://www.dipta.cat
+
+# Última actualització
+Expires: 2025-12-31T23:59:59Z

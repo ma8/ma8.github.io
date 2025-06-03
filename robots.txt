@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://ma8.github.io/sitemap.xml
+
+# Pàgina principal (home): prioritat 1.0
+# Pàgines importants o seccions principals (ex: blog, suport, serveis): prioritat 0.8 o 0.9
+# Pàgines secundàries (ex: avis legal, política de cookies, etc.): prioritat 0.3 - 0.5
+# Entrades de blog, articles: prioritat 0.6 - 0.7
