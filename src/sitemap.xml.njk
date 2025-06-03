@@ -1,0 +1,30 @@
+---
+permalink: /sitemap.xml
+layout: null
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {%- for group in collections.sitemapGroups -%}
+    {%- set canonical = group.pages[0] -%}
+    {%- if canonical.url and not canonical.data.sitemap.ignore -%}
+    <url>
+      <loc>{{ metadata.url }}{{ canonical.url }}</loc>
+      {%- for page in group.pages -%}
+        <xhtml:link
+          rel="alternate"
+          hreflang="{{ page.data.lang }}"
+          href="{{ metadata.url }}{{ page.url }}" />
+      {%- endfor -%}
+      {%- if canonical.data.sitemap and canonical.data.sitemap.changefreq -%}
+        <changefreq>{{ canonical.data.sitemap.changefreq }}</changefreq>
+      {%- endif -%}
+      {%- if canonical.data.sitemap and canonical.data.sitemap.priority -%}
+        <priority>{{ canonical.data.sitemap.priority }}</priority>
+      {%- endif -%}
+      <lastmod>{{ canonical.date | date("yyyy-MM-dd") }}</lastmod>
+    </url>
+    {%- endif -%}
+  {%- endfor -%}
+</urlset>

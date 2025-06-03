@@ -1,0 +1,49 @@
+---
+layout: base.njk
+lang: es
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter: tagList
+permalink: "/es/blog/tag/{{ tag | slug }}/index.html"
+sitemap:
+  ignore: true
+---
+
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>{{ tag | capitalize }}</h1>
+      <p>Artículos relacionados</p>
+    </div>
+      <div class="hero-icon icon--circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M241.91,137.42,142.59,38.1a13.94,13.94,0,0,0-9.9-4.1H40a6,6,0,0,0-6,6v92.69a13.94,13.94,0,0,0,4.1,9.9l99.32,99.32a14,14,0,0,0,19.8,0l84.69-84.69A14,14,0,0,0,241.91,137.42Zm-8.49,11.31-84.69,84.69a2,2,0,0,1-2.83,0L46.59,134.1a2,2,0,0,1-.59-1.41V46h86.69a2,2,0,0,1,1.41.59l99.32,99.31A2,2,0,0,1,233.42,148.73ZM94,84A10,10,0,1,1,84,74,10,10,0,0,1,94,84Z"></path></svg>
+    </div>
+    <nav class="breadcrumb" aria-label="Fil d'Ariadna">
+      <ul>
+        <li>
+          <a href="/{{lang}}/blog/">
+            <svg class="icon--bread" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218ZM148.24,92.24,112.49,128l35.75,35.76a6,6,0,1,1-8.48,8.48l-40-40a6,6,0,0,1,0-8.48l40-40a6,6,0,0,1,8.48,8.48Z"></path></svg>
+            Blog
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+</section>
+
+<div class="body__wrap">
+  <div class="container">
+    <ul class="blog__list">
+        {% for post in collections[tag] %}
+        {% include "blog-teaser.html" %}
+      {% endfor %}
+    </ul> 
+  </div>
+
+</div>
+
+

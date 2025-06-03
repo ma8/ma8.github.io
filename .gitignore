@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+
+# PostCSS output si tens un output temporal
+*.css.map
+
+# Node dependencies
+node_modules/
+
+# Eleventy output folder
+_site/
+ux/
+lighthouse-*.html
+
+# Logs and temp files
+*.log
+.DS_Store
+
+# Optional: system files or editor settings
+.env
+.vscode/
+.idea/
+
+
+# Fitxers temporals
+*.log
+*.tmp
+*.temp
+*.bak
+.DS_Store
+
+# Fitxers del sistema i IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Cache de npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

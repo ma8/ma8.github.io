@@ -1,0 +1,20 @@
+/* TEAM */
+Developer: MA8
+Design: [Nombre del diseñador o estudio]
+Content: [Disseny i Desenvolupament Web]
+Coordination: PinkWeb
+Contact: idesorden@gmail.com
+
+/* SITE */
+Last update: 2025-05-30
+Standards: HTML5, CSS3, JavaScript ES6+
+Language: Multilingual (ca, es, en)
+Tools: Eleventy, Nunjucks, Netlify (no)
+
+/* THANKS */
+Fonts: Be Vietname Pro
+Icons: [Phosphor ligth, FontAwesome]
+Libraries: Luxon, Slugify, Google Analytics
+
+/* URL */
+Site: https://ma8.github.io

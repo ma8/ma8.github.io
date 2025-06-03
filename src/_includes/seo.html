@@ -1,0 +1,55 @@
+{# SEO metadata partial #}
+<meta charset="utf-8">
+<meta name="robots" content="index, follow">
+{#<meta http-equiv="Content-Language" content="{{page.lang}}">#}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} | {{ metadata.title }} {% else %} {{ metadata.title }} {% endif %}</title>
+<meta name="description" content="{{ description or metadata.description }}">
+<link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
+
+<meta property="og:site_name" content="Mot: Mobilitat i Territori">
+{%- if lang == 'ca' -%}
+<meta property="og:locale" content="ca_ES">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="en_GB">
+{%- elseif lang == 'es' -%}
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="en_GB">
+{%- elseif lang == 'en' -%}
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="es_ES">
+{%- endif -%}
+<meta property="og:title" content="{{ title or metadata.title }}">
+<meta property="og:description" content="{{ description or metadata.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+<meta property="og:image" content="{{ metadata.url }}{{ image or metadata.image }}">
+<meta property="og:image:alt" content="{{ image_alt or metadata.image_alt }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title or metadata.title }}">
+<meta name="twitter:description" content="{{ description or metadata.description }}">
+<meta name="twitter:image" content="{{ metadata.url }}{{ image or metadata.image }}">
+<meta name="twitter:site" content="@dipta_cat">
+<meta name="twitter:creator" content="@dipta_cat">
+{# Configuració base #}
+{%- set baseUrl = metadata.url -%}
+{%- set currentKey = translation_key -%}
+{%- set currentLang = lang -%}
+{# Cerquem el grup que coincideix amb la pàgina actual #}
+{%- for group in collections.sitemapGroups -%}
+  {%- if group.key == currentKey -%}
+    {%- for p in group.pages %}
+<link rel="alternate" hreflang="{{ p.data.lang }}" href="{{ baseUrl }}{{ p.url }}">
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor %}
+<link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#fafafa">
+

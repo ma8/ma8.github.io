@@ -1,0 +1,124 @@
+/* ==========================================================================
+   FOOTER 
+========================================================================= */
+.footer {
+  padding: 0;
+  background: #eeeeee;
+  color: #131313;
+}
+
+.footer-content {
+  padding: 5rem var(--sp) var(--sp) var(--sp);
+}
+
+.footer-branding {
+  max-width: 450px;
+  margin:auto;
+}
+.app-buttons{
+  text-align: center;
+}
+.app-buttons a{
+  display: inline-block;
+}
+.app-buttons a img{
+  width: 150px;
+  margin:5px;
+  height: 45px;
+}
+.app-buttons a:focus:not(:active):not(:hover){
+  outline: 3px solid rgba(0, 0, 0, 0);
+  border-color:var(--color-focus);
+  color: #131313;
+  background-color: var(--color-focus);
+}
+.mot-logo {
+  text-align: center;
+  color:var(--color-black);
+  font-size: 54px;
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.footer__subtitle{
+  text-align: center;
+  font-size: 24px;
+  color:var(--color-black);
+  line-height: 1.1;
+  font-style: italic;
+}
+.footer-links ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 32px 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.footer-links li  a{
+  font-size: 19px;
+}
+
+.footer-links a,
+.footer-legal a {
+  text-decoration: underline;
+  color: #333;
+  padding: 0 8px;
+  &:hover{
+    text-decoration: none;
+  }
+  &:focus:not(:active):not(:hover){
+    outline: 3px solid rgba(0, 0, 0, 0);
+    border-color:var(--color-focus);
+    color: #131313;
+    background-color: var(--color-focus);
+  }
+}
+
+.footer-legal {
+  width: 100%;
+  margin: 32px 0 16px 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  & p{
+    margin-bottom:8px;
+  }
+}
+
+.footer-legal .credit {
+  margin-top: 8px;
+}
+
+.footer-logos {
+  text-align: center;
+  padding: calc(var(--sp)*2) var(--sp);
+  background-color: #f8f8f8;
+}
+
+.footer-logos img {
+  height: 45px;
+  padding: 0 calc(var(--sp));
+  &.peu-base{
+    width: 140px;
+  }
+  &.peu-dipta{
+    width: 170px;
+  }
+  &.peu-reus{
+;
+  }
+}
+.xarxes__wrap{
+  text-align: right;
+}
+.xarxes__list{
+  text-align: right;
+  list-style: none;
+  display: inline-flex;
+  gap:var(--sp);
+}

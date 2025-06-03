@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default('ca') }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} | {% endif %} mot:</title>
+  <!-- <link rel="stylesheet" href="/css/font.css"> -->
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
+  <link rel="stylesheet" href="/dist/styles.css" />
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/icon.png">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  {% include "barra.html" %}
+
+  <header>
+    <div class="branding">
+      <div class="container">
+          <div class="logo"><a href="/" title="Inici mot:">mot:</a></div>
+          <div class="menu__wrap">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="/{{ lang }}/qui-som/">Qui som</a></li>
+              <li class="menu__item"><a class="menu__link" href="/{{ lang }}/municipis/">Municipis</a></li>
+              <li class="menu__item"><a class="menu__link" href="/{{ lang }}/blog/">Blog</a></li>
+              <li class="menu__item"><a class="menu__link" href="/{{ lang }}/suport/">Suport</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--blog">
+      <div class="container">
+        <div class="hero-content">
+          <h1>{{ title }}</h1>
+          <p>{{ subtitle }}</p>
+        </div>
+        <div class="hero-icon icon--circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,42H40A14,14,0,0,0,26,56V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A14,14,0,0,0,216,42Zm2,158a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V56a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2ZM182,96a6,6,0,0,1-6,6H80a6,6,0,0,1,0-12h96A6,6,0,0,1,182,96Zm0,32a6,6,0,0,1-6,6H80a6,6,0,0,1,0-12h96A6,6,0,0,1,182,128Zm0,32a6,6,0,0,1-6,6H80a6,6,0,0,1,0-12h96A6,6,0,0,1,182,160Z"></path></svg>
+        </div>
+        <nav class="breadcrumb" aria-label="Fil d'Ariadna">
+          <ul>
+            <li>
+              <a href="/{{ lang }}/blog/">
+                <svg class="icon--bread" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218ZM148.24,92.24,112.49,128l35.75,35.76a6,6,0,1,1-8.48,8.48l-40-40a6,6,0,0,1,0-8.48l40-40a6,6,0,0,1,8.48,8.48Z"></path></svg>
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+    </section>
+    <div class="body__wrap">
+      <div class="container">
+       <div class="blog--media">
+          {% set image = image or '/assets/img/blog/article-default.jpg' %}
+          <img src="{{ image }}" alt="{{ post.data.title }}">
+        </div>
+
+        <div class="body__content content--center">
+
+         {{ content | safe }}
+      
+      </div>
+    </div>
+  </main>
+
+  {% include "peu.html" %}
+
+  {% include "cookies-banner.njk" %}
+
+  <!-- Afegir el teu arxiu JS generat -->
+  <script src="/dist/main.js"></script>  
+
+</body>
+</html>

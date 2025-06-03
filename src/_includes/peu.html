@@ -1,0 +1,60 @@
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-branding">
+      <!-- <img src="img/logo-mot.svg" alt="Mot: Aparcar" class="mot-logo"> -->
+      <div class="mot-logo">ma8</div>
+      <p class="footer__subtitle">{{ "footer_note" | i18n(lang) }}</p>
+      <div class="app-buttons">
+        <a href="https://apps.apple.com/ca/app/aparcar-app/id1014424127" target="_blank"><img src="/assets/img/buttons/get-app-store-black-{{lang}}.svg" loading="lazy" alt="App Store" width="160" height="50"></a><a href="https://play.google.com/store/apps/details?id=com.amersamparking" target="_blank"><img src="/assets/img/buttons/get-play-color-black-{{lang}}.svg" loading="lazy" alt="Google Play" width="160" height="50"></a>
+      </div>
+    </div>
+    <div class="footer-links">
+       <div class="menu__wrap">
+            {% set menu_items = [
+              { label: "menu.about", key: "about" },
+              { label: "menu.towns", key: "towns" },
+              { label: "menu.blog", key: "blog" },
+              { label: "menu.support", key: "support" }
+            ] %}
+
+            <ul>
+              {% for item in menu_items %}
+                {% set url = collections.translatedPages | getTranslatedUrl(item.key, lang) %}
+                <li><a href="{{ url }}">{{ item.label | i18n(lang) }}</a></li>
+              {% endfor %}
+            </ul>
+
+    </div>
+    <div class="footer-legal">
+      <p>
+        {% set menu_items = [
+          { label: "legal_links.legal", key: "legal" },
+          { label: "legal_links.cookies", key: "cookies" },
+          { label: "legal_links.privacy", key: "privacy" },
+          { label: "legal_links.accessibility", key: "accessibility" },
+          { label: "legal_links.sitemap", key: "sitemap" }
+        ] %}
+
+        
+        {% for item in menu_items %}
+          {% set url = collections.translatedPages | getTranslatedUrl(item.key, lang) %}
+          <a href="{{ url }}">{{ item.label | i18n(lang) }}</a> ·
+        {% endfor %}
+        <a href="#_" id="open-cookie-settings">{{ "cookies_settings" | i18n(lang) }}</a>
+        
+      </p>
+      <p class="credit">© 2025 Mot App. {{ "rights_reserved" | i18n(lang) }}.</p>
+    </div>
+  </div>
+
+  </div>
+
+    <div class="footer-logos">
+    {# <div class="container">
+        <img class="peu-base" src="/assets/img/logo-base.svg" loading="lazy" alt="Base">
+        <img class="peu-dipta" src="/assets/img/logo-dipta.svg" loading="lazy" alt="Diputació de Tarragona">
+        <img class="peu-reus"src="/assets/img/logo-reus.svg" alt="Ajuntament de Reus"> 
+    </div> #}
+
+</footer>
+

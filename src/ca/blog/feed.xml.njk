@@ -1,0 +1,24 @@
+---
+lang: ca
+permalink: /ca/blog/feed.xml
+layout: null
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Blog MOT</title>
+    <link>{{ metadata.url }}/blog/</link>
+    <description>Últimes novetats de l'app MOT</description>
+    <language>ca</language>
+    {% for post in collections.blog %}
+      <item>
+        <title>{{ post.data.title }}</title>
+        <link>{{ metadata.url }}{{ post.url }}</link>
+        <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+        <description>{{ post.templateContent | striptags | truncate(150, true) }}</description>
+        <guid>{{ metadata.url }}{{ post.url }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

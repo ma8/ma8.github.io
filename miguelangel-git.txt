@@ -1,0 +1,31 @@
+#ma8 WEB
+#https://github.com/ma8/ma8.github.io.git
+
+
+# master
+Branca de producció
+Sempre conté el codi en estat estable i desplegat a l'entorn de producció. 
+Només s'hi fan merges des de release o hotfix 
+
+git checkout master
+git merge release
+
+# release
+Branca de preproduccio o llançament
+Sempre apunta a la darrera versió en preparació. Serveix per revisar, testejar i refinar el que sortirà en el següent desplegament.Des d’aquí es fa merge cap a master i es creen etiquetes de versió (tags)
+
+git checkout release
+git tag -a v1.0 -m "Versió 1.0"
+git push origin v1.0
+
+# develop 
+Aquí s’integren les funcionalitats en desenvolupament abans d’entrar en fase de proves. Equips de programació treballen des d’aquí.
+
+# hotfix
+Branca opcional ( o release) per solucionar errors crítics en producció.
+Es crea un merge directament des de master quan cal resoldre un problema urgent.
+També es pot utilitzar la branca release.Després s'integren a master, develop i release.
+
+# Etiquetes (tags)
+Són marques fixes d’una versió específica (ex. v1.0, v1.1).
+Es creen des de release just abans de fer el merge a master. Permeten referenciar exactament una versió desplegada sense necessitat de moltes branques.

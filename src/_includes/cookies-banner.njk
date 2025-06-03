@@ -1,0 +1,32 @@
+
+<div id="cookie-banner" class="cookie-banner">
+  <p>
+    {{ "cookie_banner_text" | i18n(lang) | safe }}
+    {#<a href="/{{lang}}/politica-galetes/">{{ "cookie_more_info" | i18n(lang)  }}</a>#}
+
+    {% set menu_items = [ { label: "legal_links.cookies", key: "cookies" } ] %}  
+    {% for item in menu_items %}
+      {% set url = collections.translatedPages | getTranslatedUrl(item.key, lang) %}
+      <a href="{{ url }}">{{ "cookie_more_info" | i18n(lang)  }}</a> ·
+    {% endfor %}
+  </p>
+
+  <div class="cookie-buttons">
+    <button id="cookie-reject" class="cookie-btn rejectAll">{{ "cookie_reject_all" | i18n(lang)  }}</button>
+    <button id="cookie-accept" class="cookies-btn allowAll">{{ "cookie_accept_all" | i18n(lang)  }}</button>
+    <button id="cookie-configure" class="cookies-btn configAll">{{ "cookie_configure" | i18n(lang)  }}</button>
+  </div>
+</div>
+
+<div id="cookie-modal" class="cookie-modal" style="display: none;">
+  <div class="cookie-modal-content">
+    <h2>{{ "cookie_settings_title"| i18n(lang)  }}</h2>
+    <p>{{ "cookie_choose_text" | i18n(lang)  }}</p>
+    <label><input type="checkbox" disabled checked /> {{ "cookie_required" | i18n(lang)  }}</label><br />
+    <label><input type="checkbox" id="analytics-cookies" /> {{ "cookie_analytics" | i18n(lang)  }}</label><br />
+    <div class="cookie-modal-actions">
+      <button id="cookie-save">{{ "cookie_save" | i18n(lang) }}</button>
+      <button id="cookie-cancel">{{ "cookie_cancel" | i18n(lang) }}</button>
+    </div>
+  </div>
+</div>

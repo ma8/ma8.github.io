@@ -1,0 +1,72 @@
+---
+title: Inicio
+layout: base.njk
+lang: es
+translation_key: home
+permalink: /es/
+sitemap:
+  changefreq: daily
+  priority: 1
+---
+
+<!-- MOT: hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Mot es la app pública para aparcar y moverse</h1>
+      <p>¡Descárgala ya! Úsala fácilmente por el Camp de Tarragona, las Terres de l’Ebre y el Baix Penedès.</p>
+      <div class="buttons">
+        <a href="https://apps.apple.com/ca/app/aparcar-app/id1014424127" target="_blank"><img src="/assets/img/buttons/get-app-store-white-es.svg" loading="lazy" alt="App Store" width="160" height="50"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.amersamparking" target="_blank"><img src="/assets/img/buttons/get-play-color-es.svg" loading="lazy" alt="Google Play" width="160" height="50"></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/img/phone-mot-320.webp" loading="lazy" alt="Imatge app Mot" width="290" height="630">
+    </div>
+  </div>
+</section>
+
+<!-- MOT: municipis -->
+<section class="section-info">
+  <div class="container info-content">
+    {% set menu_items = [{ label: "menu.towns", key: "towns" }] %}
+    <div class="info-text">
+      <h2>Explora los municipios con Mot</h2>
+      <p>Encuentra tu ciudad o pueblo y empieza a moverte mejor!</p>
+      {% for item in menu_items %}
+        {% set url = collections.translatedPages | getTranslatedUrl(item.key, lang) %}
+        <p><a class="btn--primary" href="{{url}}">{{ "more_info" | i18n(lang) }}</a></p>
+      {% endfor %}
+    </div>
+    <div class="info-icon icon--circle">
+      {% for item in menu_items %}
+        {% set url = collections.translatedPages | getTranslatedUrl(item.key, lang) %}
+        <a aria-label="{{ item.label | i18n(lang) }}" href="{{ url }}"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M114,80a14,14,0,1,1,14,14A14,14,0,0,1,114,80ZM66,80a62,62,0,0,1,124,0c0,58.81-56.61,91.83-59,93.21a6,6,0,0,1-6,0C122.61,171.83,66,138.81,66,80Zm12,0c0,44.52,38.81,73.49,50,80.91,11.18-7.42,50-36.38,50-80.91A50,50,0,0,0,78,80Zm124.08,69.51a6,6,0,1,0-4.16,11.25C215.5,167.25,226,175.94,226,184c0,16.08-40.25,34-98,34s-98-17.92-98-34c0-8.06,10.5-16.75,28.08-23.24a6,6,0,1,0-4.16-11.25C30.76,158.06,18,170.31,18,184c0,13.34,12.18,25.38,34.31,33.88C72.62,225.7,99.5,230,128,230s55.38-4.3,75.69-12.12C225.82,209.38,238,197.34,238,184,238,170.31,225.24,158.06,202.08,149.51Z"></path></svg>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- MOT: funcionalitats -->
+<section class="section-funcionalitats">
+  <div class="container">
+    <h2>Mucho más que aparcar</h2>
+    <p class="intro">Aparca fácilmente, recarga tu vehículo eléctrico, gestiona denuncias y muévete por el territorio.<br><strong>Todo desde la misma app.</strong></p>
+
+    {% include "serveis-cards.html" %}
+    
+</section>
+
+<!-- MOT: nova identitat -->
+<section class="section-info">
+  <div class="container info-content">
+    <div class="info-text">
+      <h2>Ahora la app Aparcar se llama Mot</h2>
+      <p>Una nueva identidad que une Movilidad y Territorio, con la energía del ‘motor’ para impulsar el movimiento urbano.</p>
+    </div>
+    <div class="info-image">
+      <img src="/assets/img/mot-aparcar-250.webp" alt="Mot Aparcar" width="250" height="250">
+    </div>
+  </div>
+</section>
