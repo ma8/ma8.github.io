@@ -1,51 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-      <loc>https://www.appmot.cat/ca/blog/article-001/</loc><xhtml:link
-          rel="alternate"
-          hreflang="ca"
-          href="https://www.appmot.cat/ca/blog/article-001/" /><xhtml:link
+      <loc>https://www.appmot.cat/en/blog/article-001/</loc><xhtml:link
           rel="alternate"
           hreflang="en"
           href="https://www.appmot.cat/en/blog/article-001/" /><xhtml:link
           rel="alternate"
+          hreflang="ca"
+          href="https://www.appmot.cat/ca/blog/article-001/" /><xhtml:link
+          rel="alternate"
           hreflang="es"
           href="https://www.appmot.cat/es/blog/article-001/" /><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2025-05-26</lastmod>
     </url><url>
-      <loc>https://www.appmot.cat/ca/blog/article-002/</loc><xhtml:link
-          rel="alternate"
-          hreflang="ca"
-          href="https://www.appmot.cat/ca/blog/article-002/" /><xhtml:link
+      <loc>https://www.appmot.cat/en/blog/article-002/</loc><xhtml:link
           rel="alternate"
           hreflang="en"
           href="https://www.appmot.cat/en/blog/article-002/" /><xhtml:link
           rel="alternate"
+          hreflang="ca"
+          href="https://www.appmot.cat/ca/blog/article-002/" /><xhtml:link
+          rel="alternate"
           hreflang="es"
           href="https://www.appmot.cat/es/blog/article-002/" /><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2025-05-26</lastmod>
     </url><url>
-      <loc>https://www.appmot.cat/ca/accessibilitat/</loc><xhtml:link
-          rel="alternate"
-          hreflang="ca"
-          href="https://www.appmot.cat/ca/accessibilitat/" /><xhtml:link
+      <loc>https://www.appmot.cat/en/about/</loc><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://www.appmot.cat/en/accessibility/" /><xhtml:link
-          rel="alternate"
-          hreflang="es"
-          href="https://www.appmot.cat/es/accesibilidad/" /><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2025-06-03</lastmod>
-    </url><url>
-      <loc>https://www.appmot.cat/ca/avis-legal/</loc><xhtml:link
-          rel="alternate"
-          hreflang="ca"
-          href="https://www.appmot.cat/ca/avis-legal/" /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="https://www.appmot.cat/en/legal-terms/" /><xhtml:link
-          rel="alternate"
-          hreflang="es"
-          href="https://www.appmot.cat/es/aviso-legal/" /><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2025-06-03</lastmod>
-    </url><url>
-      <loc>https://www.appmot.cat/ca/guia-estil/</loc><xhtml:link
+          href="https://www.appmot.cat/en/about/" /><xhtml:link
           rel="alternate"
           hreflang="ca"
           href="https://www.appmot.cat/ca/guia-estil/" /><xhtml:link
@@ -53,85 +34,104 @@
           hreflang="ca"
           href="https://www.appmot.cat/ca/qui-som/" /><xhtml:link
           rel="alternate"
-          hreflang="en"
-          href="https://www.appmot.cat/en/about/" /><xhtml:link
-          rel="alternate"
           hreflang="es"
           href="https://www.appmot.cat/es/nosotros/" /><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2025-06-03</lastmod>
     </url><url>
-      <loc>https://www.appmot.cat/ca/</loc><xhtml:link
-          rel="alternate"
-          hreflang="ca"
-          href="https://www.appmot.cat/ca/" /><xhtml:link
+      <loc>https://www.appmot.cat/en/accessibility/</loc><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://www.appmot.cat/en/" /><xhtml:link
-          rel="alternate"
-          hreflang="es"
-          href="https://www.appmot.cat/es/" /><changefreq>weekly</changefreq><priority>1</priority><lastmod>2025-06-03</lastmod>
-    </url><url>
-      <loc>https://www.appmot.cat/ca/mapa-web/</loc><xhtml:link
+          href="https://www.appmot.cat/en/accessibility/" /><xhtml:link
           rel="alternate"
           hreflang="ca"
-          href="https://www.appmot.cat/ca/mapa-web/" /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="https://www.appmot.cat/en/web-map/" /><xhtml:link
+          href="https://www.appmot.cat/ca/accessibilitat/" /><xhtml:link
           rel="alternate"
           hreflang="es"
-          href="https://www.appmot.cat/es/mapa-web/" /><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2025-06-03</lastmod>
+          href="https://www.appmot.cat/es/accesibilidad/" /><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2025-06-03</lastmod>
     </url><url>
-      <loc>https://www.appmot.cat/ca/politica-galetes/</loc><xhtml:link
-          rel="alternate"
-          hreflang="ca"
-          href="https://www.appmot.cat/ca/politica-galetes/" /><xhtml:link
+      <loc>https://www.appmot.cat/en/cookies-policy/</loc><xhtml:link
           rel="alternate"
           hreflang="en"
           href="https://www.appmot.cat/en/cookies-policy/" /><xhtml:link
           rel="alternate"
+          hreflang="ca"
+          href="https://www.appmot.cat/ca/politica-galetes/" /><xhtml:link
+          rel="alternate"
           hreflang="es"
           href="https://www.appmot.cat/es/politica-cookies/" /><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2025-06-03</lastmod>
     </url><url>
-      <loc>https://www.appmot.cat/ca/politica-privacitat/</loc><xhtml:link
+      <loc>https://www.appmot.cat/en/</loc><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.appmot.cat/en/" /><xhtml:link
           rel="alternate"
           hreflang="ca"
-          href="https://www.appmot.cat/ca/politica-privacitat/" /><xhtml:link
+          href="https://www.appmot.cat/ca/" /><xhtml:link
+          rel="alternate"
+          hreflang="es"
+          href="https://www.appmot.cat/es/" /><lastmod>2025-06-03</lastmod>
+    </url><url>
+      <loc>https://www.appmot.cat/en/legal-terms/</loc><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.appmot.cat/en/legal-terms/" /><xhtml:link
+          rel="alternate"
+          hreflang="ca"
+          href="https://www.appmot.cat/ca/avis-legal/" /><xhtml:link
+          rel="alternate"
+          hreflang="es"
+          href="https://www.appmot.cat/es/aviso-legal/" /><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2025-06-03</lastmod>
+    </url><url>
+      <loc>https://www.appmot.cat/en/privacy-policy/</loc><xhtml:link
           rel="alternate"
           hreflang="en"
           href="https://www.appmot.cat/en/privacy-policy/" /><xhtml:link
           rel="alternate"
+          hreflang="ca"
+          href="https://www.appmot.cat/ca/politica-privacitat/" /><xhtml:link
+          rel="alternate"
           hreflang="es"
           href="https://www.appmot.cat/es/politica-privacidad/" /><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2025-06-03</lastmod>
     </url><url>
-      <loc>https://www.appmot.cat/ca/blog/</loc><xhtml:link
+      <loc>https://www.appmot.cat/en/web-map/</loc><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.appmot.cat/en/web-map/" /><xhtml:link
           rel="alternate"
           hreflang="ca"
-          href="https://www.appmot.cat/ca/blog/" /><xhtml:link
+          href="https://www.appmot.cat/ca/mapa-web/" /><xhtml:link
+          rel="alternate"
+          hreflang="es"
+          href="https://www.appmot.cat/es/mapa-web/" /><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2025-06-03</lastmod>
+    </url><url>
+      <loc>https://www.appmot.cat/en/blog/</loc><xhtml:link
           rel="alternate"
           hreflang="en"
           href="https://www.appmot.cat/en/blog/" /><xhtml:link
           rel="alternate"
+          hreflang="ca"
+          href="https://www.appmot.cat/ca/blog/" /><xhtml:link
+          rel="alternate"
           hreflang="es"
           href="https://www.appmot.cat/es/blog/" /><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2025-06-03</lastmod>
     </url><url>
-      <loc>https://www.appmot.cat/ca/projectes/</loc><xhtml:link
-          rel="alternate"
-          hreflang="ca"
-          href="https://www.appmot.cat/ca/projectes/" /><xhtml:link
+      <loc>https://www.appmot.cat/en/projects/</loc><xhtml:link
           rel="alternate"
           hreflang="en"
           href="https://www.appmot.cat/en/projects/" /><xhtml:link
           rel="alternate"
+          hreflang="ca"
+          href="https://www.appmot.cat/ca/projectes/" /><xhtml:link
+          rel="alternate"
           hreflang="es"
           href="https://www.appmot.cat/es/proyectos/" /><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2025-06-03</lastmod>
     </url><url>
-      <loc>https://www.appmot.cat/ca/suport/</loc><xhtml:link
-          rel="alternate"
-          hreflang="ca"
-          href="https://www.appmot.cat/ca/suport/" /><xhtml:link
+      <loc>https://www.appmot.cat/en/support/</loc><xhtml:link
           rel="alternate"
           hreflang="en"
           href="https://www.appmot.cat/en/support/" /><xhtml:link
+          rel="alternate"
+          hreflang="ca"
+          href="https://www.appmot.cat/ca/suport/" /><xhtml:link
           rel="alternate"
           hreflang="es"
           href="https://www.appmot.cat/es/soporte/" /><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2025-06-03</lastmod>
